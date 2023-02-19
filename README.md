@@ -9,3 +9,9 @@ The following endpoints are available:
 - `https://fff-api.onrender.com/api/articles/populate=coverImage,imageGallery` will show all media content related to each entry.
 - `https://fff-api.onrender.com/api/articles?fields=title` will only fetch the titles of the respective items included in the articles array. Any other property can be included in the `fields` parameter.
 - `http://localhost:1337/api/articles?fields=publishedAt&sort=publishedAt:desc` will filter the entries based on their publishing date. Both `asc` and `desc` can be used, meaning "ascendant" and "descendant" order.
+
+## Context
+
+The development of this API is part an assignment for the Development Platforms course, in the Frontend Development programme at the Norwegian School of Technology and Digital Media (Noroff).
+
+This API has been developed as part of the [Farming for the future (FFF)](https://map.farmingforthefuture.site) project.
