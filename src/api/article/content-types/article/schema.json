@@ -26,7 +26,7 @@
       "required": true,
       "default": "Title"
     },
-    "Blurb": {
+    "blurb": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -36,7 +36,7 @@
       "default": "Short blurb",
       "required": true
     },
-    "Body": {
+    "body": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -45,7 +45,7 @@
       "type": "richtext",
       "required": true
     },
-    "Author": {
+    "author": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -55,34 +55,64 @@
       "required": true,
       "default": "Name of author"
     },
-    "CoverImage": {
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "videos"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": false
+      }
     },
-    "ImageGallery": {
+    "imageGallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "language": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true,
+      "default": "Which language has the article been written in?"
+    },
+    "country": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": false
+    },
+    "authorBio": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true,
+      "default": "Short bio"
     }
   }
 }
